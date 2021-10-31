@@ -81,10 +81,9 @@ app.layout = html.Div([
                      {"label": "Single / not married", "value": 'Single / not married'},
                      {"label": "Civil marriage", "value": 'Civil marriage'},
                      {"label": "Widow", "value": 'Widow'},
-                     {"label": "Unknown", "value": 'Unknown'},
                      {"label": "Separated", "value": 'Separated'}],
                  multi=False,
-                 value='Unknown',
+                 value='Married',
                  placeholder='Select family status',
                  style={'width': "40%"}
                  ),
