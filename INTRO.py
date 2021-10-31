@@ -15,9 +15,9 @@ app = Dash(__name__)
 
 # -- Import and clean data (importing csv into pandas)
 # df = pd.read_csv("intro_bees.csv")
-df = pd.read_csv("X_train_catboost.csv")
-y_train = pd.read_csv("y_train_catboost.csv")
-train=pd.read_csv("application_train.csv")
+df = pd.read_csv("df.csv")
+y_train = pd.read_csv("y_train.csv")
+train=pd.read_csv("train.csv")
 train['target']=train['TARGET'].replace({0:'zero',1:'one'})
 df=df.copy()
 df['target']=y_train['target']
