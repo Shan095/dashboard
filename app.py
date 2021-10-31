@@ -191,23 +191,23 @@ app.layout = html.Div([
 # ------------------------------------------------------------------------------
 # Connect the Plotly graphs with Dash Components
 @app.callback(
-    [dash.dependencies.Output(component_id='output_container',component_property='children'),
-     dash.dependencies.Output(component_id='score_graph',component_property='figure'),
-     dash.dependencies.Output(component_id='education_graph',component_property='figure'),
-     dash.dependencies.Output(component_id='box_graph',component_property='figure')],
-    [dash.dependencies.Input(component_id='input_box', component_property='value'),
-     dash.dependencies.Input(component_id='slct_education', component_property='value'),
-     dash.dependencies.Input(component_id='slct_income_type', component_property='value'),
-     dash.dependencies.Input(component_id='slct_family_status', component_property='value'),
-     dash.dependencies.Input(component_id='slct_profession_type', component_property='value'),
-     dash.dependencies.Input(component_id='slct_organization_type', component_property='value'),
-     dash.dependencies.Input(component_id='slct_gender', component_property='value'),
-     dash.dependencies.Input(component_id='age', component_property='value'),
-     dash.dependencies.Input(component_id='annual_income', component_property='value'),
-     dash.dependencies.Input(component_id='credit_length', component_property='value'),
-     dash.dependencies.Input(component_id='credit_amount', component_property='value'),
-     dash.dependencies.Input(component_id='years_employed', component_property='value'),
-     dash.dependencies.Input(component_id='slct_variable', component_property='value')]
+    [Output(component_id='output_container',component_property='children'),
+     Output(component_id='score_graph',component_property='figure'),
+     Output(component_id='education_graph',component_property='figure'),
+     Output(component_id='box_graph',component_property='figure')],
+    [Input(component_id='input_box', component_property='value'),
+     Input(component_id='slct_education', component_property='value'),
+     Input(component_id='slct_income_type', component_property='value'),
+     Input(component_id='slct_family_status', component_property='value'),
+     Input(component_id='slct_profession_type', component_property='value'),
+     Input(component_id='slct_organization_type', component_property='value'),
+     Input(component_id='slct_gender', component_property='value'),
+     Input(component_id='age', component_property='value'),
+     Input(component_id='annual_income', component_property='value'),
+     Input(component_id='credit_length', component_property='value'),
+     Input(component_id='credit_amount', component_property='value'),
+     Input(component_id='years_employed', component_property='value'),
+     Input(component_id='slct_variable', component_property='value')]
 )
 def update_output(client_id,education, income_type,family_status,profession,organisation, gender,
                   age,annual_income,credit_length,credit_amount,years_employed,variable):
