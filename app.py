@@ -170,7 +170,7 @@ app.layout = html.Div([
                ),
     dcc.Graph(id='score_graph', figure={}),
     dcc.Graph(id='education_graph', figure={}),
-    html.Label("Gender"),
+    html.Label("Numeric variable"),
     dcc.Dropdown(id="slct_variable",
                  options=[
                      {"label": "Age", "value": 'age'},
