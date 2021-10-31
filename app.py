@@ -12,7 +12,7 @@ from plotly.subplots import make_subplots
 
 
 app = Dash(__name__)
-#server = app.server
+server = app.server
 
 # -- Import and clean data (importing csv into pandas)
 # df = pd.read_csv("intro_bees.csv")
