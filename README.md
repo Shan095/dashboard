@@ -1,2 +1,2 @@
 # dashboard
-This branch has codes to build an interactive dashboard within the project with Dash and Heroku.
+This branch contains codes to build an interactive dashboard within the project with Dash and Heroku.
